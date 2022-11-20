@@ -1,0 +1,95 @@
+[gd_scene load_steps=13 format=3 uid="uid://d15cnruanfogn"]
+
+[ext_resource type="Script" path="res://Scenes/Main/Game/game.gd" id="1_04poe"]
+[ext_resource type="PackedScene" uid="uid://dcung6p1rerdd" path="res://Scenes/Main/Game/hand.tscn" id="2_mayav"]
+[ext_resource type="Texture2D" uid="uid://vpcauuo1hqah" path="res://Assets/board2player.png" id="2_mqoai"]
+[ext_resource type="Script" path="res://Scenes/Main/Game/Deck.gd" id="3_q0k5h"]
+[ext_resource type="Script" path="res://Scenes/Main/Game/Camera2D.gd" id="3_q02hq"]
+[ext_resource type="Script" path="res://Scenes/Main/Game/Region.gd" id="4_clco3"]
+[ext_resource type="Script" path="res://Scenes/Main/Game/Cursor.gd" id="7_82eg3"]
+[ext_resource type="PackedScene" uid="uid://cujfoogjojjch" path="res://Scenes/Main/Game/pack.tscn" id="8_kscml"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifnlc"]
+size = Vector2(256, 256)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3a6e5"]
+radius = 1.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkii3"]
+size = Vector2(3456, 640)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ojltm"]
+size = Vector2(192, 576)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_04poe")
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="Board" type="Sprite2D" parent="."]
+position = Vector2(1920, 0)
+texture = ExtResource("2_mqoai")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+ignore_rotation = false
+current = true
+script = ExtResource("3_q02hq")
+
+[node name="Deck" type="Area2D" parent="."]
+position = Vector2(256, 0)
+script = ExtResource("3_q0k5h")
+
+[node name="Area" type="CollisionShape2D" parent="Deck"]
+shape = SubResource("RectangleShape2D_ifnlc")
+
+[node name="Cursor" type="Area2D" parent="."]
+script = ExtResource("7_82eg3")
+
+[node name="Size" type="CollisionShape2D" parent="Cursor"]
+shape = SubResource("CircleShape2D_3a6e5")
+
+[node name="Player1" type="Node2D" parent="."]
+
+[node name="Region" type="Area2D" parent="Player1"]
+position = Vector2(2048, 448)
+script = ExtResource("4_clco3")
+
+[node name="Area" type="CollisionShape2D" parent="Player1/Region"]
+shape = SubResource("RectangleShape2D_vkii3")
+
+[node name="Hand" parent="Player1" instance=ExtResource("2_mayav")]
+
+[node name="Discard" type="Area2D" parent="Player1"]
+position = Vector2(2048, 448)
+script = ExtResource("4_clco3")
+
+[node name="Area" type="CollisionShape2D" parent="Player1/Discard"]
+position = Vector2(-1920, 64)
+shape = SubResource("RectangleShape2D_ojltm")
+
+[node name="Pack" parent="Player1" instance=ExtResource("8_kscml")]
+
+[node name="Player2" type="Node2D" parent="."]
+
+[node name="Region" type="Area2D" parent="Player2"]
+position = Vector2(1984, -448)
+rotation = -3.14159
+script = ExtResource("4_clco3")
+
+[node name="Area" type="CollisionShape2D" parent="Player2/Region"]
+shape = SubResource("RectangleShape2D_vkii3")
+
+[node name="Hand" parent="Player2" instance=ExtResource("2_mayav")]
+position = Vector2(960, -960)
+
+[node name="Discard" type="Area2D" parent="Player2"]
+position = Vector2(128, -480)
+rotation = 3.14159
+script = ExtResource("4_clco3")
+
+[node name="Area" type="CollisionShape2D" parent="Player2/Discard"]
+shape = SubResource("RectangleShape2D_ojltm")
+
+[node name="Pack" parent="Player2" instance=ExtResource("8_kscml")]
+position = Vector2(896, -480)
+rotation = 3.14159

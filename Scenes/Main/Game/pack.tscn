@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cujfoogjojjch"]
+
+[ext_resource type="Script" path="res://Scenes/Main/Game/Pack.gd" id="1_05ixf"]
+[ext_resource type="Texture2D" uid="uid://c1ugukf2pf13u" path="res://Assets/GameUI/Pack.png" id="2_ag4xq"]
+[ext_resource type="Texture2D" uid="uid://bcalxptwn5waq" path="res://Assets/GameUI/PassButton.png" id="3_8kssj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qffrx"]
+size = Vector2(1152, 616)
+
+[node name="Pack" type="Area2D"]
+visible = false
+position = Vector2(896, 480)
+script = ExtResource("1_05ixf")
+
+[node name="Back" type="Sprite2D" parent="."]
+texture = ExtResource("2_ag4xq")
+
+[node name="Move" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -640.0
+offset_top = -352.0
+offset_right = 640.0
+offset_bottom = -288.0
+mouse_default_cursor_shape = 13
+
+[node name="Pass" type="TextureButton" parent="."]
+offset_left = 400.0
+offset_top = 328.0
+offset_right = 576.0
+offset_bottom = 376.0
+texture_normal = ExtResource("3_8kssj")
+
+[node name="Area" type="CollisionShape2D" parent="."]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_qffrx")
+
+[connection signal="button_down" from="Move" to="." method="_on_move_button_down"]
+[connection signal="button_up" from="Move" to="." method="_on_move_button_up"]
+[connection signal="pressed" from="Pass" to="." method="_on_pass_pressed"]

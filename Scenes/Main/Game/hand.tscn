@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcung6p1rerdd"]
+
+[ext_resource type="Script" path="res://Hand.gd" id="1_eorgd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ixan0"]
+size = Vector2(1408, 248)
+
+[node name="Hand" type="Area2D"]
+position = Vector2(961, 952)
+script = ExtResource("1_eorgd")
+metadata/_edit_use_anchors_ = true
+
+[node name="Area" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 4)
+shape = SubResource("RectangleShape2D_ixan0")
+
+[node name="Pivot" type="Marker2D" parent="."]
+position = Vector2(0, 1500)

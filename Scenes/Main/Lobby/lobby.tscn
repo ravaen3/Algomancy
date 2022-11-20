@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddnmnsl7tt20d"]
+
+[ext_resource type="Script" path="res://Scenes/Main/Lobby/lobby.gd" id="1_0csoo"]
+[ext_resource type="Texture2D" uid="uid://dqpcjsk7crbyk" path="res://Assets/Icons/Cross.png" id="2_8a7cw"]
+[ext_resource type="FontFile" uid="uid://du7k8ju8g7din" path="res://Assets/Fonts/EBGaramond-Medium.ttf" id="2_dhmvc"]
+[ext_resource type="Script" path="res://Scenes/Main/Lobby/FactionList.gd" id="3_ttew2"]
+
+[node name="Lobby" type="Node2D"]
+script = ExtResource("1_0csoo")
+
+[node name="LobbyMenu" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LobbyMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -191.0
+offset_right = 128.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Gamemode" type="OptionButton" parent="LobbyMenu/VBoxContainer"]
+offset_right = 360.0
+offset_bottom = 93.0
+theme_override_fonts/font = ExtResource("2_dhmvc")
+theme_override_font_sizes/font_size = 64
+item_count = 2
+selected = 0
+popup/item_0/text = "Draft"
+popup/item_0/id = 0
+popup/item_1/text = "Constructed"
+popup/item_1/id = 1
+
+[node name="FactionList" type="ItemList" parent="LobbyMenu/VBoxContainer"]
+offset_top = 97.0
+offset_right = 360.0
+offset_bottom = 445.0
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_dhmvc")
+theme_override_font_sizes/font_size = 40
+allow_reselect = true
+auto_height = true
+item_count = 5
+item_0/text = "water"
+item_0/icon = ExtResource("2_8a7cw")
+item_1/text = "earth"
+item_1/icon = ExtResource("2_8a7cw")
+item_2/text = "fire"
+item_2/icon = ExtResource("2_8a7cw")
+item_3/text = "wood"
+item_3/icon = ExtResource("2_8a7cw")
+item_4/text = "metal"
+item_4/icon = ExtResource("2_8a7cw")
+script = ExtResource("3_ttew2")
+
+[node name="Playing" type="CheckBox" parent="LobbyMenu/VBoxContainer"]
+offset_top = 449.0
+offset_right = 360.0
+offset_bottom = 480.0
+disabled = true
+button_pressed = true
+text = "Playing"
+
+[node name="Back" type="Button" parent="LobbyMenu"]
+offset_left = 64.0
+offset_top = 960.0
+offset_right = 256.0
+offset_bottom = 1016.0
+text = "Back"
+
+[node name="Start" type="Button" parent="LobbyMenu"]
+offset_left = 1752.0
+offset_top = 952.0
+offset_right = 1856.0
+offset_bottom = 1016.0
+text = "Ready"
+
+[connection signal="item_selected" from="LobbyMenu/VBoxContainer/FactionList" to="." method="_on_faction_list_item_selected"]
+[connection signal="pressed" from="LobbyMenu/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="LobbyMenu/Start" to="." method="_on_start_pressed"]

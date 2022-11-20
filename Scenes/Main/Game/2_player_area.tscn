@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://oyk3osn60chy"]
+
+[ext_resource type="Script" path="res://Scenes/Main/Game/Region.gd" id="1_fca4l"]
+[ext_resource type="PackedScene" uid="uid://dcung6p1rerdd" path="res://Scenes/Main/Game/hand.tscn" id="2_d0vsp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkii3"]
+size = Vector2(3456, 640)
+
+[node name="2PlayerArea" type="Node2D"]
+
+[node name="Region" type="Area2D" parent="."]
+position = Vector2(2048, 448)
+script = ExtResource("1_fca4l")
+
+[node name="Area" type="CollisionShape2D" parent="Region"]
+shape = SubResource("RectangleShape2D_vkii3")
+
+[node name="Hand" parent="." instance=ExtResource("2_d0vsp")]

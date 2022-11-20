@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://ww8st3ce6ogb"]
+
+[ext_resource type="Script" path="res://Scenes/Main/Game/card.gd" id="1_htybn"]
+[ext_resource type="Texture2D" uid="uid://bfybst4xcik0p" path="res://Assets/Cards/Place-Holder.jpg" id="2_pbq0d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnfwp"]
+size = Vector2(176, 240)
+
+[node name="Card" type="Area2D" groups=["Card"]]
+script = ExtResource("1_htybn")
+
+[node name="CardArtImporter" type="HTTPRequest" parent="."]
+
+[node name="Art" type="TextureButton" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -360.0
+offset_top = -500.0
+offset_right = 360.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.25, 0.25)
+pivot_offset = Vector2(360, 500)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+tooltip_text = "aeawewaeawe"
+mouse_default_cursor_shape = 13
+texture_normal = ExtResource("2_pbq0d")
+stretch_mode = 3
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dnfwp")
+disabled = true
+
+[node name="CardInfo" type="PopupPanel" parent="."]
+size = Vector2i(38, 34)
+
+[node name="Label" type="Label" parent="CardInfo"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 34.0
+offset_bottom = 30.0
+
+[connection signal="request_completed" from="CardArtImporter" to="." method="_on_card_art_importer_request_completed"]
+[connection signal="button_down" from="Art" to="." method="_on_art_button_down"]
+[connection signal="button_up" from="Art" to="." method="_on_art_button_up"]
