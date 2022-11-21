@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsq6ov6vr5pwt"
-path="res://.godot/imported/Spined-Tantelope.jpg-1f021b97012a652f539f0d6eb2e9953f.ctex"
+uid="uid://bdmmvi2xipqkg"
+path="res://.godot/imported/PassButtonHover.png-864d22a65ad3b1230426c65a450cf70e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/Art/Spined-Tantelope.jpg"
-dest_files=["res://.godot/imported/Spined-Tantelope.jpg-1f021b97012a652f539f0d6eb2e9953f.ctex"]
+source_file="res://Assets/GameUI/PassButtonHover.png"
+dest_files=["res://.godot/imported/PassButtonHover.png-864d22a65ad3b1230426c65a450cf70e.ctex"]
 
 [params]
 

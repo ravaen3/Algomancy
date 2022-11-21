@@ -53,10 +53,12 @@ func update_phase():
 				pack1.add_child(child)
 		for child in temp_pack:
 			pack2.add_child(child)
+		get_node("Player"+str(player_id)).get_node("Pack").visible = false
 		phase = "Combat"
 	elif phase == "Combat":
 		phase = "Main"
 	elif phase == "Main":
+		get_node("Player"+str(player_id)).get_node("Pack").visible = true
 		phase = "Draft"
 			
 func _process(delta):

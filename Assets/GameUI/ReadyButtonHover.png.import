@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpfx32byedhts"
-path="res://.godot/imported/Ancient-One.jpg-6e1dbbf7ec8037bd02b084d150b1fe2a.ctex"
+uid="uid://dq0vyxhww8opi"
+path="res://.godot/imported/ReadyButtonHover.png-d83901cb133c99198daa6bc744f8b65e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/Art/Ancient-One.jpg"
-dest_files=["res://.godot/imported/Ancient-One.jpg-6e1dbbf7ec8037bd02b084d150b1fe2a.ctex"]
+source_file="res://Assets/GameUI/ReadyButtonHover.png"
+dest_files=["res://.godot/imported/ReadyButtonHover.png-d83901cb133c99198daa6bc744f8b65e.ctex"]
 
 [params]
 

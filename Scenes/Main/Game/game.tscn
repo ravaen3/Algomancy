@@ -69,6 +69,10 @@ shape = SubResource("RectangleShape2D_ojltm")
 
 [node name="Pack" parent="Player1" instance=ExtResource("8_kscml")]
 
+[node name="TextureButton" type="TextureButton" parent="Player1"]
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="Player2" type="Node2D" parent="."]
 
 [node name="Region" type="Area2D" parent="Player2"]

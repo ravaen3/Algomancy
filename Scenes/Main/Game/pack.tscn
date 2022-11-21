@@ -8,7 +8,6 @@
 size = Vector2(1152, 616)
 
 [node name="Pack" type="Area2D"]
-visible = false
 position = Vector2(896, 480)
 script = ExtResource("1_05ixf")
 
@@ -36,4 +35,3 @@ shape = SubResource("RectangleShape2D_qffrx")
 
 [connection signal="button_down" from="Move" to="." method="_on_move_button_down"]
 [connection signal="button_up" from="Move" to="." method="_on_move_button_up"]
-[connection signal="pressed" from="Pass" to="." method="_on_pass_pressed"]

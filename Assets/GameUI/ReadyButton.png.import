@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwirvxrpl6dr1"
-path="res://.godot/imported/Plodding-Pebbles.jpg-8f566954e0cac3ae921b4e479531802c.ctex"
+uid="uid://cfpwu6v1r8516"
+path="res://.godot/imported/ReadyButton.png-ad6fdd0d122ec5a49f9b74466b988784.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Cards/Art/Plodding-Pebbles.jpg"
-dest_files=["res://.godot/imported/Plodding-Pebbles.jpg-8f566954e0cac3ae921b4e479531802c.ctex"]
+source_file="res://Assets/GameUI/ReadyButton.png"
+dest_files=["res://.godot/imported/ReadyButton.png-ad6fdd0d122ec5a49f9b74466b988784.ctex"]
 
 [params]
 

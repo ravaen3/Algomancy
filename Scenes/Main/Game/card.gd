@@ -18,6 +18,7 @@ var cursor
 func _ready():
 	game = get_tree().root.get_node("Game")
 	var card = Global.cards.get(str(name))[0]
+	print(card)
 	power = card.power
 	toughness = card.toughness
 	threshold = card.cost
@@ -25,7 +26,7 @@ func _ready():
 	type = card.type
 	text = card.text
 	factions = card.factions
-	imageURL = str(card.imageUrl).substr(11).replace(" ","-")
+	imageURL = str(card.name).replace(" ","-")+".jpg"
 	if FileAccess.file_exists("res://Assets/Cards/Art/"+imageURL):
 		default_texture = load("res://Assets/Cards/Art/"+imageURL)
 	else:
@@ -55,8 +56,8 @@ func drag_card():
 func _on_card_art_importer_request_completed(result, response_code, headers, body):
 	if result == HTTPRequest.RESULT_SUCCESS:
 		var image = Image.new()
-		var error = image.load_jpg_from_buffer(body)
-		if error == OK:
+		image.load_jpg_from_buffer(body)
+		if !image.is_empty():
 			var texture = ImageTexture.create_from_image(image)
 			default_texture = texture
 			var file = FileAccess.open("res://Assets/Cards/Art/"+imageURL,FileAccess.WRITE)

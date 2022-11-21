@@ -6,11 +6,11 @@ var multiplayer_peer = ENetMultiplayerPeer.new()
 var is_playing = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	update_cards()
 	var file =FileAccess.open("res://Assets/Cards/cards.json", FileAccess.READ)
 	var json = JSON.new()
 	json.parse(file.get_as_text())
 	cards = json.get_data()
-	update_cards()
 
 func update_cards():
 	var request = HTTPRequest.new()
