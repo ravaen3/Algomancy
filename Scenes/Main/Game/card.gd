@@ -18,7 +18,6 @@ var cursor
 func _ready():
 	game = get_tree().root.get_node("Game")
 	var card = Global.cards.get(str(name))[0]
-	print(card)
 	power = card.power
 	toughness = card.toughness
 	threshold = card.cost
@@ -33,25 +32,13 @@ func _ready():
 		$CardArtImporter.request("https://calebgannon.com/wp-content/uploads/cardsearch-images/"+imageURL)
 	update()
 
-
 func update():
 	if get_parent().hidden_zone:
 		$Art.texture_normal = load("res://Assets/Cards/Card-Back.jpg")
+		$Art.tooltip_text = text
 	else:
 		$Art.texture_normal = default_texture
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if selected:
-		if Input.is_action_just_pressed("rotate_left"):
-			rotation += deg_to_rad(90)
-		if Input.is_action_just_pressed("rotate_right"):
-			rotation -= deg_to_rad(90)
-		global_position = get_global_mouse_position()
-	pass
-
-func drag_card():
-	pass
+		$Art.tooltip_text = text
 
 func _on_card_art_importer_request_completed(result, response_code, headers, body):
 	if result == HTTPRequest.RESULT_SUCCESS:
@@ -102,8 +89,9 @@ func _on_art_button_up():
 	global_position = Global.get_global_mouse_position()
 	var move = false
 	if game.player_id:
-		for area in cursor.get_overlapping_areas():
-			if area != self:
+		var area = cursor.get_overlapping_areas().back()
+		if area != null:
+			if area != self and !move:
 				var bottom = false
 				move = true
 				if Input.is_action_pressed("shift"):
