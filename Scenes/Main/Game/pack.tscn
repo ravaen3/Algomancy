@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bcalxptwn5waq" path="res://Assets/GameUI/PassButton.png" id="3_8kssj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qffrx"]
-size = Vector2(1152, 616)
+size = Vector2(1120, 616)
 
 [node name="Pack" type="Area2D"]
 position = Vector2(896, 480)

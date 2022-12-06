@@ -1,5 +1,5 @@
 extends Area2D
-const MAGNET_MAP = Vector2(90, 90)
+const MAGNET_MAP = Vector2(100, 100)
 const MAGNET_MAP_OFFSET = Vector2(0, 0)
 var hidden_zone = false
 # Called when the node enters the scene tree for the first time.

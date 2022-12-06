@@ -1,16 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://ww8st3ce6ogb"]
+[gd_scene load_steps=6 format=3 uid="uid://ww8st3ce6ogb"]
 
 [ext_resource type="Script" path="res://Scenes/Main/Game/card.gd" id="1_htybn"]
+[ext_resource type="Texture2D" uid="uid://cqg67ehf8riur" path="res://Assets/Cards/Card-Back.jpg" id="2_446sa"]
 [ext_resource type="Texture2D" uid="uid://bfybst4xcik0p" path="res://Assets/Cards/Place-Holder.jpg" id="2_pbq0d"]
 [ext_resource type="Script" path="res://Scenes/Main/Game/Art.gd" id="3_vuck7"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_dnfwp"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6872f"]
 size = Vector2(176, 240)
 
 [node name="Card" type="Area2D" groups=["Card"]]
 script = ExtResource("1_htybn")
 
-[node name="CardArtImporter" type="HTTPRequest" parent="."]
+[node name="Hover" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0.776471, 0.913725, 0.733333, 0.478431)
+scale = Vector2(0.26, 0.26)
+texture = ExtResource("2_446sa")
 
 [node name="Art" type="TextureButton" parent="."]
 anchors_preset = 8
@@ -34,9 +39,13 @@ stretch_mode = 3
 script = ExtResource("3_vuck7")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_dnfwp")
+shape = SubResource("RectangleShape2D_6872f")
 disabled = true
 
-[connection signal="request_completed" from="CardArtImporter" to="." method="_on_card_art_importer_request_completed"]
+[node name="CardArtImporter" type="HTTPRequest" parent="."]
+
 [connection signal="button_down" from="Art" to="." method="_on_art_button_down"]
 [connection signal="button_up" from="Art" to="." method="_on_art_button_up"]
+[connection signal="mouse_entered" from="Art" to="." method="_on_art_mouse_entered"]
+[connection signal="mouse_exited" from="Art" to="." method="_on_art_mouse_exited"]
+[connection signal="request_completed" from="CardArtImporter" to="." method="_on_card_art_importer_request_completed"]

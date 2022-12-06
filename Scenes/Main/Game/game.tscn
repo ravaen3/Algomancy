@@ -12,14 +12,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ifnlc"]
 size = Vector2(256, 256)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_3a6e5"]
-radius = 1.0
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkii3"]
 size = Vector2(3456, 640)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ojltm"]
 size = Vector2(192, 576)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3a6e5"]
+radius = 1.0
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_04poe")
@@ -41,12 +41,6 @@ script = ExtResource("3_q0k5h")
 
 [node name="Area" type="CollisionShape2D" parent="Deck"]
 shape = SubResource("RectangleShape2D_ifnlc")
-
-[node name="Cursor" type="Area2D" parent="."]
-script = ExtResource("7_82eg3")
-
-[node name="Size" type="CollisionShape2D" parent="Cursor"]
-shape = SubResource("CircleShape2D_3a6e5")
 
 [node name="Player1" type="Node2D" parent="."]
 
@@ -97,3 +91,13 @@ shape = SubResource("RectangleShape2D_ojltm")
 [node name="Pack" parent="Player2" instance=ExtResource("8_kscml")]
 position = Vector2(896, -480)
 rotation = 3.14159
+
+[node name="Cursor" type="Area2D" parent="."]
+script = ExtResource("7_82eg3")
+
+[node name="Size" type="CollisionShape2D" parent="Cursor"]
+shape = SubResource("CircleShape2D_3a6e5")
+
+[node name="SelectedImage" type="Sprite2D" parent="Cursor"]
+modulate = Color(1, 1, 1, 0.784314)
+scale = Vector2(0.25, 0.25)

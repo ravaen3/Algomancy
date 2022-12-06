@@ -1,6 +1,6 @@
 extends Area2D
-const MAGNET_MAP = Vector2(90, 90)
-const MAGNET_MAP_OFFSET = Vector2(0, 0)
+const MAGNET_MAP = Vector2(190, 140)
+const MAGNET_MAP_OFFSET = Vector2(95, 0)
 var hidden_zone = true
 var selected = false
 var select_point

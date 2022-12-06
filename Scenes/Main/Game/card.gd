@@ -58,6 +58,8 @@ func _on_card_art_importer_request_completed(result, response_code, headers, bod
 
 func _on_art_button_down():
 	rpc("set_disabled")
+	cursor = game.get_node("Cursor")
+	cursor.get_node("SelectedImage").texture = $Art.texture_normal
 	origin = position
 	selected = true
 	pass # Replace with function body.
@@ -84,6 +86,7 @@ func format():
 
 func _on_art_button_up():
 	cursor = game.get_node("Cursor")
+	cursor.get_node("SelectedImage").texture = null
 	selected = false
 	rpc("set_disabled", false)
 	global_position = Global.get_global_mouse_position()
@@ -102,3 +105,13 @@ func _on_art_button_up():
 				update_card_location(Global.get_global_mouse_position(), rotation, game.get_path_to(area), bottom)
 	if !move:
 		position = origin
+
+
+func _on_art_mouse_entered():
+	$Hover.visible = true
+	pass # Replace with function body.
+
+
+func _on_art_mouse_exited():
+	$Hover.visible = false
+	pass # Replace with function body.
