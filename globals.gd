@@ -47,6 +47,11 @@ func generate_deck(factions):
 		if include:
 			decklist.append(card.name)
 	decklist.shuffle()
+	var file = FileAccess.open("res://Assets/Cards/deck.txt", FileAccess.WRITE)
+	var decklistStr = ""
+	for card in decklist:
+		decklistStr+="1 "+card+"\n"
+	file.store_string(decklistStr)
 	return decklist
 	
 func host_server(port):
