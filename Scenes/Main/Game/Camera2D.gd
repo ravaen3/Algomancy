@@ -1,6 +1,7 @@
 extends Camera2D
 var flipped = false
-
+var anchor = position
+var moving_camera = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -8,6 +9,15 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Input.is_action_just_pressed("camera_move"):
+		anchor = get_viewport().get_mouse_position()
+		moving_camera = true
+	if Input.is_action_just_released("camera_move"):
+		moving_camera = false
+	if moving_camera:
+		self.global_position.x += anchor.x - get_viewport().get_mouse_position().x
+		self.global_position.y += anchor.y - get_viewport().get_mouse_position().y
+		anchor = get_viewport().get_mouse_position()
 	if Input.is_action_pressed("camera_up"):
 		if flipped:
 			position.y+=10

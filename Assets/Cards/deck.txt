@@ -1,167 +1,46 @@
-1 Fertile Soil
-1 Humphrey
-1 Icon of Growth
-1 Active Volcano
-1 Flame of Remembrance
-1 Inspiration
-1 Grim Fungus
-1 Crystal Conversion
-1 Death Bloat
-1 Herder of the Flock
-1 Gromlin
-1 Natural Camouflage
-1 Bunker Dude
-1 Benevolent Bodyguard
-1 Thunder Dino
-1 Towering Colossus
 1 Burning Vengeance
-1 Biotoxicity
-1 Ambling Mountaintop
-1 Warrior of the Flame
-1 Article of Reverberation
-1 Red Guy
-1 Rebalance
-1 Echo of Life
-1 Lost Guardian
-1 Ember of Life
-1 Growing Thing
-1 Malformed Monstrosity
-1 Fight
-1 Growing Plague
-1 Spark
-1 Seismomancy
-1 Battle
-1 Volatile Toxicity
-1 Landslide
-1 Arc Lightning
-1 Spirit of Battle
-1 Crystalline Scavenger
-1 Death Cap
-1 Accelerated Germination
-1 Rousing Ranunculus
-1 Molten Ritualist
-1 Infused Poison
-1 Flame Shield
-1 Sudden Bloom
-1 Boon of Protection
-1 Friendly Fire
-1 Tree Crystal
-1 Wildfire
-1 Fireball Guy
-1 Rousing Spirit
-1 Floral Shield
-1 The Great Mush
-1 Stealth Rock
-1 Invigorate
-1 Hooba-Lin
-1 Awoken Tomb
-1 Reality Bender
-1 Harbinger of Death
-1 Elemental Dominance
-1 Spirit of Nature
-1 Graxxlid
-1 Bubb
-1 Tranquility
-1 Emblem of War
-1 Birth
-1 Pack Leader
-1 Selfless Shiitaki
-1 Rampant Growth
-1 Cooperate
-1 Lil Mush
-1 Spined Tantelope
-1 Corrupting Blight
-1 Biohazardous Blast
-1 Twin Flame
 1 Spirit of Vengeance
-1 Trampling Treant
-1 Fungal Gardener
-1 Nyordix
-1 Mohruung
-1 Spooky Spirit
-1 Crumbling Ancient
-1 Invigorating Blossom
-1 Sunset Belly
-1 Goom
-1 Saprophytic Oracle
-1 Glimpse The Origin
-1 Skybreaker
-1 Ground Breaker
-1 Organic Exchange
-1 Shocking Shiitake
-1 Slumbering Ancient
-1 Test Plant Buddies
 1 Envoy of Lightning
-1 Sloopy Gandler
-1 Sprouter
-1 Burgeoning Mimic
-1 All-Consuming Blight
-1 Squad Leader
-1 Serenity
-1 Bidoof
-1 Recurrent Spirit
-1 Grumpent Lefnear
-1 Bearer of Destiny
-1 Hush Mush
-1 Thundering Beast
-1 Spraying Colony
-1 Groobis
-1 Rude Dude
-1 Boop
-1 Soul Tithe
-1 Ghord
-1 Immolate
-1 Ravenous Fireslinger
-1 Plague Spreader
 1 Lightning Bolt
-1 Sacrificial Burst
-1 Phytochemical Protection
-1 Burgeon
-1 Animated Spark
-1 Forked Negation
-1 Soul Swallower
-1 Throw off a Cliff
-1 Replicate
-1 Spike
-1 Crystalline Portal
-1 Moosh, Master Forager
-1 Its a Flower
-1 Ralph
-1 Throwing Boulder
-1 Rocky
-1 Megadeath
-1 Bellowing Boulder
 1 All-Consuming Blaze
-1 Squish
-1 Structural Collapse
-1 Reclaimer of Secrets
-1 Primal Progress
-1 Geode
-1 Aggressive One
-1 Plodding Pebbles
-1 Sunset Dude
-1 Symbiosis
-1 Spoopy
-1 Huge Dude
-1 Flame of History
-1 Servant of the Flame
-1 Ignis Booba
-1 Hobbled Woofer
-1 Aether Channeler
-1 Longfoot
-1 Easy Target
-1 Ralph2
-1 That Guy
-1 The First Flame
-1 Earnest Defender
-1 Boon of Cultivation
-1 Botanical Beatdown
-1 Child of Aether
-1 Static Courier
-1 Spraying Mushroom
-1 Harbinger of Storms
-1 Protector of the Grove
-1 Mystic Guardian
-1 One Banana
-1 Endbringer
+1 Fireball Guy
 1 Herald of Lightning
+1 Ghord
+1 Warrior of the Flame
+1 Recurrent Spirit
+1 Ignis Booba
+1 Soul Tithe
+1 Birth
+1 Ground Breaker
+1 Rousing Spirit
+1 Spark
+1 Twin Flame
+1 Wildfire
+1 Article of Reverberation
+1 Gromlin
+1 Flame of History
+1 Squad Leader
+1 The First Flame
+1 Replicate
+1 Elemental Dominance
+1 Forked Negation
+1 Flame of Remembrance
+1 Flame Shield
+1 Ravenous Fireslinger
+1 Spooky Spirit
+1 Servant of the Flame
+1 Arc Lightning
+1 Static Courier
+1 Spirit of Battle
+1 Goom
+1 Soul Swallower
+1 Sacrificial Burst
+1 Spoopy
+1 Thunder Dino
+1 Hooba-Lin
+1 Reclaimer of Secrets
+1 Immolate
+1 Aggressive One
+1 Red Guy
+1 Friendly Fire
+1 Animated Spark
