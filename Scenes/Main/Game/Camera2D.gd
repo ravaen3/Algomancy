@@ -15,8 +15,8 @@ func _process(delta):
 	if Input.is_action_just_released("camera_move"):
 		moving_camera = false
 	if moving_camera:
-		self.global_position.x += anchor.x - get_viewport().get_mouse_position().x
-		self.global_position.y += anchor.y - get_viewport().get_mouse_position().y
+		global_position.x += anchor.x - get_viewport().get_mouse_position().x
+		global_position.y += anchor.y - get_viewport().get_mouse_position().y
 		anchor = get_viewport().get_mouse_position()
 	if Input.is_action_pressed("camera_up"):
 		if flipped:

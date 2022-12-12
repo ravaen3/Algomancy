@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cujfoogjojjch"]
+[gd_scene load_steps=6 format=3 uid="uid://cujfoogjojjch"]
 
 [ext_resource type="Script" path="res://Scenes/Main/Game/Pack.gd" id="1_05ixf"]
 [ext_resource type="Texture2D" uid="uid://c1ugukf2pf13u" path="res://Assets/GameUI/Pack.png" id="2_ag4xq"]
 [ext_resource type="Texture2D" uid="uid://bcalxptwn5waq" path="res://Assets/GameUI/PassButton.png" id="3_8kssj"]
+[ext_resource type="Texture2D" uid="uid://bdmmvi2xipqkg" path="res://Assets/GameUI/PassButtonHover.png" id="4_hkstd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qffrx"]
 size = Vector2(1120, 616)
@@ -28,6 +29,7 @@ offset_top = 328.0
 offset_right = 576.0
 offset_bottom = 376.0
 texture_normal = ExtResource("3_8kssj")
+texture_hover = ExtResource("4_hkstd")
 
 [node name="Area" type="CollisionShape2D" parent="."]
 position = Vector2(0, 20)

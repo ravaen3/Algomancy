@@ -1,46 +1,167 @@
-1 Burning Vengeance
-1 Spirit of Vengeance
-1 Envoy of Lightning
-1 Lightning Bolt
-1 All-Consuming Blaze
-1 Fireball Guy
 1 Herald of Lightning
-1 Ghord
-1 Warrior of the Flame
-1 Recurrent Spirit
-1 Ignis Booba
-1 Soul Tithe
-1 Birth
-1 Ground Breaker
-1 Rousing Spirit
-1 Spark
-1 Twin Flame
-1 Wildfire
-1 Article of Reverberation
-1 Gromlin
-1 Flame of History
-1 Squad Leader
+1 Grim Fungus
+1 Shipbreaker
+1 Emergent Squid
 1 The First Flame
-1 Replicate
-1 Elemental Dominance
-1 Forked Negation
-1 Flame of Remembrance
-1 Flame Shield
-1 Ravenous Fireslinger
-1 Spooky Spirit
-1 Servant of the Flame
-1 Arc Lightning
-1 Static Courier
-1 Spirit of Battle
-1 Goom
-1 Soul Swallower
-1 Sacrificial Burst
-1 Spoopy
-1 Thunder Dino
 1 Hooba-Lin
-1 Reclaimer of Secrets
-1 Immolate
-1 Aggressive One
+1 Invigorate
+1 Water Buddies
+1 Fungal Gardener
+1 Big Banana
+1 Harbinger of Storms
+1 Bidoof
+1 Big Stuff
+1 Its a Flower
+1 Herder of the Flock
+1 Elemental Dominance
+1 Ralph
+1 Bloodletting Beast
+1 Ambush Chomper
+1 Floral Shield
+1 Symbiosis
+1 Pack Leader
+1 Overwatered Mush
+1 Reckoner of Ice
+1 Strange Weather
+1 Frosted Friend
+1 Just Good Fung
+1 Gromlin
+1 Rousing Ranunculus
+1 Abnormal Avalanche
+1 Death Greeter
+1 Squad Leader
+1 Sudden Bloom
+1 Saprogenesis
+1 Flash Kraken
+1 Random Statue
+1 The Great Mush
+1 Loob
+1 Burning Vengeance
+1 Megadeath
+1 Selfless Shiitaki
+1 Growing Thing
+1 Spell Excavation
+1 Pull Under
+1 Nonsense Card
+1 Soul Tithe
+1 Leaping Lillik
+1 Icon of Growth
+1 Sacrificial Burst
+1 Ice Friend
+1 Twin Flame
+1 Tsunami
+1 Boon of Protection
+1 Manaclysm
+1 Moosh, Master Forager
+1 Spoopy
 1 Red Guy
-1 Friendly Fire
+1 Flame of History
+1 Death Cap
+1 Arc Lightning
+1 Death Bloat
+1 Sky Eel
+1 Spooky Spirit
+1 Upheaval
+1 Hush Mush
+1 All-Consuming Blaze
+1 Spirit of Vengeance
+1 Natural Camouflage
+1 Mad Guy
+1 Wildfire
+1 Organic Exchange
+1 Volatile Toxicity
+1 Ravenous Fireslinger
+1 Harbinger of Death
+1 Ground Breaker
+1 Inspiration
+1 Ghord
+1 Frosted Denial
+1 Ember of Life
+1 Tidal Crasher
+1 Trampling Treant
+1 Warrior of the Flame
+1 Lightning Bolt
+1 Biotoxicity
+1 Fertile Soil
+1 Recall
+1 Boon of Cultivation
+1 Botanical Beatdown
+1 Friendly Dragon
+1 Static Courier
+1 Warp Reality
+1 Plague Spreader
+1 Escape Whale
+1 Ignis Booba
+1 Accelerated Germination
+1 Reclaimer of Secrets
+1 Soul Swallower
+1 Test Plant Buddies
+1 Rebalance
+1 Arc Charger
+1 Chub Chub
+1 Article of Reverberation
+1 Groobis
+1 Primal Proliferator
+1 Saprophytic Oracle
+1 Servant of the Flame
+1 Bingus
+1 Burgeon
+1 Summoned Army
+1 Turtle Snake
+1 Blip Blup
+1 Corrupting Blight
+1 Ghrish, Big Splasher
+1 Orblish Horroth
+1 Crabbish
+1 Flame Shield
+1 Alligatherer
+1 Spirit of Battle
+1 Growing Plague
+1 Horror Thing
+1 Minor Kraken
+1 Birth
+1 Boosh
+1 Spraying Mushroom
+1 Repel
+1 Miscast
+1 Banishment
+1 Tortuga
+1 Friendly Flame
+1 Frillip
+1 Intercepting Bollus
+1 Retreating Rhute
+1 Recurrent Spirit
+1 Revival Thing
+1 Jelly
+1 Goom
+1 Uh Oh
+1 Bob
+1 Master of the Intangible
+1 Phytochemical Protection
+1 Flame of Remembrance
+1 Envoy of Lightning
+1 Overwhelm
+1 Climate Reckoning
+1 Earnest Defender
+1 Redirect
+1 All-Consuming Blight
+1 Sprouter
+1 Big Eye
+1 Rampant Growth
+1 Origon
+1 Rousing Spirit
+1 Lil Mush
+1 Immolate
+1 Shocking Shiitake
+1 Aggressive One
+1 Grollid
 1 Animated Spark
+1 Grumpent Lefnear
+1 Exacted Discovery
+1 Blizzard
+1 Biohazardous Blast
+1 Invigorating Blossom
+1 Emblem of War
+1 Fireball Guy
+1 Thunder Dino
+1 Spark

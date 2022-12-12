@@ -7,21 +7,21 @@ var is_playing = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	update_cards()
-	var file =FileAccess.open("res://Assets/Cards/cards.json", FileAccess.READ)
-	var json = JSON.new()
-	json.parse(file.get_as_text())
-	cards = json.get_data()
 
 func update_cards():
 	var request = HTTPRequest.new()
 	add_child(request)
 	request.request_completed.connect(self._on_json_importer_request_completed)
 	request.request("https://calebgannon.com/wp-content/uploads/algomancy-extras/AlgomancyCards.json")
+	
 
 func _on_json_importer_request_completed(_result, _response_code, _headers, body):
 	var file = FileAccess.open("res://Assets/Cards/cards.json", FileAccess.WRITE)
 	file.store_string(body.get_string_from_utf8())
-
+	file =FileAccess.open("res://Assets/Cards/cards.json", FileAccess.READ)
+	var json = JSON.new()
+	json.parse(file.get_as_text())
+	cards = json.get_data()
 
 
 @rpc
